@@ -48,9 +48,10 @@ h1{
 }
 
 .info {
-    margin: auto;
-    width: 28%;
-    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    gap: 10px;
 }
 
 p{
@@ -75,4 +76,10 @@ p{
 
 .cs-logo:hover{
     filter: grayscale(0%);
+}
+
+@media screen and (max-width: 600px){
+    .img-me{
+        width: 200px;
+    }
 }
